@@ -1,0 +1,58 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/tables.css}">
+    <title>IDPU.MD</title>
+</head>
+<body>
+<div class="background" >
+    <div class="sidenav" >
+        <a th:href="@{/}" style="padding: 0; width: 0;"> <img class = 'logo' th:src="@{/images/logo1.png}" ></a>
+        <a th:href="@{/universitati}">Universități</a>
+        <a th:href="@{/avantaje}">Diagrame </a>
+        <a th:href="@{/useful}">Link-uri utile</a>
+        <a th:href="@{/info}" >Date de contact</a> <br>
+      </div>
+
+      <!-- content -->
+      <div class="main">
+          <h1 class="titlu">Lista Universităților din Republica Moldova </h1>
+
+          <table class="minimalistBlack">
+            <thead style="text-align: center">
+                <tr>
+                    <td></td>
+                    <th>Instituția</th>
+                    <th>Studenți bugetari</th>
+                    <th>Studenți la contract</th>
+                    <th>Absolvenți<br>2018/2019</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img th:src="@{/images/utm.png}" style="width: 240px; height: 120px" alt="" ></td>
+                    <td><a th:href="@{/Universitatea-Tehnica-a-Moldovei}">Universitatea Tehnică a Moldovei</a></td>
+                    <td th:text="${students[0]}"></td>
+                    <td th:text="${students[1]}"></td>
+                    <td th:text="${students[2]}"></td>
+                </tr>
+                <tr>
+                <td><img th:src="@{/images/usm.png}" style="width: 250px; height: 140px" alt=""></td>
+                <td><a th:href="@{/Universitatea-de-Stat-a-Moldovei}">Universitatea de Stat a Moldovei</a></td>
+                <td th:text="${students[3]}"></td>
+                <td th:text="${students[4]}"></td>
+                <td th:text="${students[5]}"></td>
+                </tr>
+
+            </tbody>
+        </table>
+        
+      </div>
+    
+</div>
+    
+</body>
+
+</html>

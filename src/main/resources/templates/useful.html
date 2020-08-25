@@ -1,0 +1,51 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/tables.css}">
+    <title>IDPU.MD</title>
+</head>
+<body>
+<div class="background" >
+    <div class="sidenav" >
+        <a th:href="@{/}" style="padding: 0; width: 0;"> <img class = 'logo' th:src="@{/images/logo1.png}" ></a>
+        <a th:href="@{/universitati}">Universități</a>
+        <a th:href="@{/avantaje}">Diagrame </a>
+        <a th:href="@{/useful}">Link-uri utile</a>
+        <a th:href="@{/info}" >Date de contact</a> <br>
+      </div>
+      
+      <!-- continutul paginii -->
+      <div class="main">
+          <h1 class="titlu">Link-uri utile</h1>
+            <h3>
+                Datele informaționale folosite în cadrul acestui proiect au fost preluate de pe site-urile oficiale ale universităților
+            </h3>
+            <br>
+            <table class = "minimalistBlack">
+                <thead style="text-align: center">
+                <tr>
+                    <td></td>
+                    <td>Adresa site-ului oficial</td>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img th:src="@{/images/utm.png}" style="width: 240px; height: 120px" alt="" ></td>
+                        <td><a href="https://utm.md/">Universitatea Tehnică a Moldovei</a></td>
+                    </tr>
+                    <tr>
+                        <td><img th:src="@{/images/usm.png}" style="width: 250px; height: 140px" alt=""></td>
+                        <td><a href="http://usm.md/">Universitatea de Stat a Moldovei</a></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+      </div>
+</div>
+    
+</body>
+
+</html>

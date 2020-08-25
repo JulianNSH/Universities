@@ -1,0 +1,80 @@
+
+.minimalistBlack {
+    background-color: rgb(164, 207, 197);
+    margin: 50px 60px 100px 60px;
+    width: 90%;
+    text-align: center;
+  }
+
+.minimalistBlack td, table.minimalistBlack th {
+    padding-left: 60px;
+    padding: 5px 4px;
+  }
+
+.minimalistBlack tbody td {
+    font-size: 25px;
+  }
+.minimalistBlack tbody tr:hover{
+    background-color: #41A58D;
+    color: #f1f1f1;
+  }
+
+.minimalistBlack thead {
+    text-align: right;
+    background: #CFCFCF;
+    background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+    background: linear-gradient(top bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+  }
+.minimalistBlack thead th {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+
+  }
+
+  .minimalistBlack a{
+    text-decoration: none;
+    color: black;
+  }
+  .facultati a{
+    text-decoration: none;
+    color: black;
+  }
+ 
+ .facultati {
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #444444;
+  font-size: 80%;
+  font-weight: 400;
+  box-sizing: inherit;
+  border-collapse: collapse;
+  background-color: rgb(164, 207, 197);
+  width: 50%;
+  margin-bottom: 1rem;
+  margin-left: 25%;
+  border: 1px solid green;
+ }
+
+ .facultati td{
+   text-align: center;
+  border: 1px solid green;
+  padding: .75rem;
+  vertical-align: top;
+ }
+
+ .facultati tbody tr:hover{
+  background-color: #41A58D;
+  color: #f1f1f1;
+}
+
+
+.facultati th{
+text-align: center!important;
+padding: .75rem;
+vertical-align: bottom;
+border: 1px solid green;
+}

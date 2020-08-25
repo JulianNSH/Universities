@@ -1,0 +1,57 @@
+body{
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+);
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sidenav {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: 100%;
+    width: 200px; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000; 
+    overflow-x: hidden;
+
+  }
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    border: 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #acacac;
+    display: block;
+    
+  }
+ 
+.sidenav a:hover {
+    background-color: #41A58D;
+    color: #f1f1f1;
+  }
+  
+.sidenav img{
+    padding-top: 68px;
+    padding-bottom: 68px;
+    width: 200px;
+    height: 64px;
+  }
+
+
+.main {
+    margin-top: 40px;
+    margin-left: 210px;
+    padding: 1%;
+}
+
+
+.titlu{
+  
+  font-size: 35px;
+
+  align-content: center;
+}
+
+.form{
+  align-self: center;
+}

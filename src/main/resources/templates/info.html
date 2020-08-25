@@ -1,0 +1,32 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/tables.css}">
+    <title>IDPU.MD</title>
+</head>
+<body>
+<div class="background" >
+    <div class="sidenav" >
+        <a th:href="@{/}" style="padding: 0; width: 0;"> <img class = 'logo' th:src="@{/images/logo1.png}" ></a>
+        <a th:href="@{/universitati}">Universități</a>
+        <a th:href="@{/avantaje}">Diagrame </a>
+        <a th:href="@{/useful}">Link-uri utile</a>
+        <a th:href="@{/info}" >Date de contact</a> <br>
+      </div>
+      
+      <!-- continutul paginii -->
+      <div class="main">
+          <h1 class="titlu">Date de contact</h1>
+          <h3>
+          <p>Dezvoltator: Iulian Paniș student gr. IA-181 a Universității Tehnice a Moldovei<br>
+               <br> Mail corporativ: <a th:href="@{mailto::iulian.panis@iis.utm.com}" style="color:blue">
+                    iulian.panis@iis.utm.com</a></p>
+          </h3>
+      </div>
+</div>
+    
+</body>
+
+</html>

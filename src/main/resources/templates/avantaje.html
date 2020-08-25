@@ -1,0 +1,83 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/tables.css}">
+    <title>IDPU.MD</title>
+</head>
+<body>
+<div class="background" >
+    <div class="sidenav" >
+        <a th:href="@{/}" style="padding: 0; width: 0;"> <img class = 'logo' th:src="@{/images/logo1.png}" ></a>
+        <a th:href="@{/universitati}">Universități</a>
+        <a th:href="@{/avantaje}">Diagrame </a>
+        <a th:href="@{/useful}">Link-uri utile</a>
+        <a th:href="@{/info}" >Date de contact</a> <br>
+    </div>
+
+      <!-- continutul paginii -->
+      <div class="main">
+          <h1 class="titlu">Diagrama datelor pe Universități</h1>
+          <!-- <?php
+          require '../configurare.php';
+          $link = mysqli_connect($host, $user, $password, $database);
+          $sql = "SELECT studenti.studenti_buget, studenti.studenti_contract, absolventi.nabsolventi
+                          FROM list_universitati AS universitati
+                          JOIN studenti AS studenti ON universitati.id_studenti = studenti.id_studenti
+                          JOIN absolventi AS absolventi ON universitati.id_absolventi = absolventi.id_absolventi";
+          
+          $result = mysqli_query($link, $sql);
+          $row = mysqli_fetch_row($result);
+            $a=$row[0]; $b=$row[1]; $c=$row[2];
+          $row = mysqli_fetch_row($result);
+
+            $dataPoints = array( 
+	            array("y" => $a, "label" => "Buget\n(UTM)" ),
+                array("y" => $row[0], "label" => "Buget\n(USM)"),
+                array("y" => $b, "label" => "Contract\n(UTM)" ),
+                array("y" => $row[1], "label" => "Contract\n(USM)"),
+                array("y" => $c, "label" => "Absolvenți\n(UTM)" ),
+	            array("y" => $row[2], "label" => "Absolvenți\n(USM)"),
+            );
+ 
+?>
+-->
+    <script th:inline="javascript">
+    window.onload = function() {
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Studenți"
+	},
+	axisY: {
+		title: "Numărul studenților"
+	},
+	data: [{
+		type: "column",
+		yValueFormatString: "#,##0.## ",
+        dataPoints: [{y: [[${nrSt[0]}]], label:"Buget\n(UTM)" },
+                     {y: [[${nrSt[3]}]], label:"Buget\n(USM)"},
+                     {y: [[${nrSt[1]}]], label:"Contract\n(UTM)"},
+                     {y: [[${nrSt[4]}]], label:"Contract\n(USM)"},
+                     {y: [[${nrSt[2]}]], label:"Absolvenți\n(UTM)"},
+                     {y: [[${nrSt[5]}]], label:"Absolvenți\n(USM)"}]
+	}]
+    });
+    chart.render();
+ 
+    }
+    </script>
+
+    <div id="chartContainer" style="height: 370px; margin-bottom: 1rem;margin-left: 25%;width: 50%; border-style: groove;"></div>
+    <script th:src="@{https://canvasjs.com/assets/script/canvasjs.min.js}"></script>
+
+    
+</div>
+</div>
+    
+</body>
+
+</html>
